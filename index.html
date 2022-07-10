@@ -366,11 +366,11 @@
         document.getElementById('contact_Form').addEventListener('submit', function (event) {
             event.preventDefault();
             // these IDs from the previous steps
-            emailjs.sendForm('service_yqhi71o', 'template_lzkqq4o', this)
+            emailjs.sendForm('service_yqhi71o', 'template_eepiqju', this)
                 .then(function () {
                     alert("mail sent successfully")
                 }, function (error) {
-                    console.log('FAILED...', error);
+                    alert("mail sent unsuccessful")
                 });
         });
 
